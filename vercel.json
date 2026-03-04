@@ -3,6 +3,14 @@
     {
       "source": "/home",
       "destination": "/professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/index.html"
+    },
+    {
+      "source": "/home/style.css",
+      "destination": "/professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/style.css"
+    },
+    {
+      "source": "/home/script.js",
+      "destination": "/professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/script.js"
     }
   ]
 }

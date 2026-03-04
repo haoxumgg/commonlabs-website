@@ -86,22 +86,26 @@
       ></iframe>
       <div class="center-overlay">
         <a
+          id="goSearchLink"
           class="cta"
-          href="professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/index.html"
+          href="/home"
           style="margin-top: 400px; display: inline-flex;"
           >go search</a>
-        
+
       </div>
     </section>
 
-    <main class="below">
-      <p>
-        Continue to
-        <a
-          href="professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/index.html"
-          >the homepage</a
-        >.
-      </p>
-    </main>
+    <script>
+      (function () {
+        var link = document.getElementById("goSearchLink");
+        if (!link) return;
+        if (window.location.protocol === "file:") {
+          link.href =
+            "professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/index.html";
+        } else {
+          link.href = "/home";
+        }
+      })();
+    </script>
   </body>
 </html>
