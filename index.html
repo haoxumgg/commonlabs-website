@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMMON LABS</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .hero iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .hero .center-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        display: grid;
+        place-items: center;
+        pointer-events: none;
+      }
+
+      .hero .cta {
+        pointer-events: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 999px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        transition: transform 0.2s ease, background 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .hero .cta:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .hero .cta:active {
+        transform: translateY(0px);
+      }
+
+      .below {
+        padding: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" aria-label="Interactive liquid gradient">
+      <iframe
+        src="interactive-liquid-gradient-using-three-js/dist/index.html"
+        title="Interactive Liquid Gradient"
+        loading="eager"
+        referrerpolicy="no-referrer"
+      ></iframe>
+      <div class="center-overlay">
+        <a
+          class="cta"
+          href="professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/index.html"
+          style="margin-top: 400px; display: inline-flex;"
+          >go search</a>
+        
+      </div>
+    </section>
+
+    <main class="below">
+      <p>
+        Continue to
+        <a
+          href="professional-developer-portfoliomodern-interactive-cv/professional-developer-portfoliomodern-interactive-cv/dist/index.html"
+          >the homepage</a
+        >.
+      </p>
+    </main>
+  </body>
+</html>

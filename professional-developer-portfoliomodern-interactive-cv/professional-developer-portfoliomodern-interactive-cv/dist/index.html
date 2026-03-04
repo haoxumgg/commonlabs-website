@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>COMMON LABS - AI for Finance · Science · Industry</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="body-main" data-theme="dark" data-lang="en" data-dir="ltr">
+    <div class="loader-screen" id="loader">
+      <div class="loader-content">
+        <div class="loader-code-text">
+          <div class="code-line" data-line="1">const commonLabs = {</div>
+          <div class="code-line" data-line="2">  loading: true,</div>
+          <div class="code-line" data-line="3">  status: 'initializing...'</div>
+          <div class="code-line" data-line="4">};</div>
+        </div>
+        <div class="loader-spinner-wrapper">
+          <div class="loader-spinner"></div>
+        </div>
+        <div class="loader-progress-wrapper">
+          <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loaderPercent">0%</div>
+      </div>
+    </div>
+
+    <header class="main-header" id="header">
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <div class="brand-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">CommonLabs</span>
+            <span class="logo-bracket">/&gt;</span>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active" data-section="home">
+            <i class="fas fa-home"></i>
+            <span class="nav-text" data-text-en="Overview" data-text-ar="Overview">Overview</span>
+          </a>
+          <a href="#about" class="nav-link" data-section="about">
+            <i class="fas fa-building"></i>
+            <span class="nav-text" data-text-en="About" data-text-ar="About">About</span>
+          </a>
+          <a href="#skills" class="nav-link" data-section="skills">
+            <i class="fas fa-layer-group"></i>
+            <span class="nav-text" data-text-en="Business Areas" data-text-ar="Business Areas">Business Areas</span>
+          </a>
+          <a href="#experience" class="nav-link" data-section="experience">
+            <i class="fas fa-cubes"></i>
+            <span class="nav-text" data-text-en="Products" data-text-ar="Products">Products</span>
+          </a>
+          <a href="#projects" class="nav-link" data-section="projects">
+            <i class="fas fa-bullseye"></i>
+            <span class="nav-text" data-text-en="Mission & Engagement" data-text-ar="Mission & Engagement">Mission & Engagement</span>
+          </a>
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span class="nav-text" data-text-en="Contact" data-text-ar="Contact">Contact</span>
+          </a>
+        </div>
+
+        <div class="nav-controls">
+          <button class="lang-toggle" id="langToggle" title="Toggle Language">
+            <i class="fas fa-language"></i>
+            <span class="lang-text">AR</span>
+          </button>
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section id="home" class="hero-section">
+        <div class="hero-background">
+          <div class="code-grid-bg"></div>
+          <div class="floating-particles" id="particles"></div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-greeting">
+              <span class="greeting-text" data-text-en="Welcome to" data-text-ar="Welcome to">Welcome to</span>
+              <span class="greeting-cursor">|</span>
+            </div>
+
+            <h1 class="hero-name" id="heroName">
+              <span class="name-prefix">const</span>
+              <span class="name-operator">=</span>
+              <span class="name-value">CommonLabs</span>
+              <span class="name-suffix">;</span>
+            </h1>
+
+            <div class="hero-title">
+              <span class="title-prefix">//</span>
+              <span class="title-text" data-text-en="AI for Finance · Science · Industry" data-text-ar="AI for Finance · Science · Industry"
+                >AI for Finance · Science · Industry</span
+              >
+            </div>
+
+            <p
+              class="hero-description"
+              data-text-en="COMMON LABS is an artificial intelligence technology company dedicated to building advanced AI systems for real-world applications. We develop high-performance, production-ready AI solutions serving financial institutions, scientific organizations, and industrial enterprises."
+              data-text-ar="COMMON LABS is an artificial intelligence technology company dedicated to building advanced AI systems for real-world applications. We develop high-performance, production-ready AI solutions serving financial institutions, scientific organizations, and industrial enterprises."
+            >
+              COMMON LABS is an artificial intelligence technology company dedicated to building advanced AI systems for real-world applications.
+              We develop high-performance, production-ready AI solutions serving financial institutions, scientific organizations, and industrial
+              enterprises.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#experience" class="btn btn-primary">
+                <span data-text-en="Explore Our Products" data-text-ar="Explore Our Products">Explore Our Products</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span data-text-en="Contact Us" data-text-ar="Contact Us">Contact Us</span>
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <a href="mailto:contact@commonlabs.tech" class="social-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://www.commonlabs.tech" target="_blank" rel="noopener noreferrer" class="social-icon" title="Website">
+                <i class="fas fa-globe"></i>
+              </a>
+              <a href="#" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <div class="profile-image-glow"></div>
+              <div class="profile-image-frame">
+                <div class="profile-image" id="profileImage">
+                  <div class="profile-placeholder">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-badge badge-1">
+                <i class="fas fa-network-wired"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Scalable</span>
+                  <span class="badge-libs">Production-ready systems</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-2">
+                <i class="fas fa-robot"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Multi-Agent</span>
+                  <span class="badge-libs">Collaborative intelligence</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-3">
+                <i class="fas fa-industry"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Domain AI</span>
+                  <span class="badge-libs">Finance · Science · Industry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span class="scroll-text" data-text-en="Scroll Down" data-text-ar="Scroll Down">Scroll Down</span>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span class="title-text" data-text-en="About COMMON LABS" data-text-ar="About COMMON LABS">About COMMON LABS</span>
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text-wrapper">
+              <div class="about-intro">
+                <p
+                  class="about-text"
+                  data-text-en="Our focus is on scalable architectures, multi-agent intelligence, and domain-specific AI platforms that deliver measurable impact."
+                  data-text-ar="Our focus is on scalable architectures, multi-agent intelligence, and domain-specific AI platforms that deliver measurable impact."
+                >
+                  Our focus is on scalable architectures, multi-agent intelligence, and domain-specific AI platforms that deliver measurable impact.
+                </p>
+              </div>
+
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-number" data-count="3">0</div>
+                  <div class="stat-label" data-text-en="Core Domains" data-text-ar="Core Domains">Core Domains</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-count="5">0</div>
+                  <div class="stat-label" data-text-en="Product Lines" data-text-ar="Product Lines">Product Lines</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-count="1">0</div>
+                  <div class="stat-label" data-text-en="Multi-Agent Framework" data-text-ar="Multi-Agent Framework">Multi-Agent Framework</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-image-wrapper">
+              <div class="about-image-container">
+                <div class="code-block">
+                  <div class="code-line">
+                    <span class="code-keyword">const</span>
+                    <span class="code-variable">commonLabs</span>
+                    <span class="code-operator">=</span>
+                    <span class="code-brace">{</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="code-property">mission</span>
+                    <span class="code-operator">:</span>
+                    <span class="code-string">'Build Intelligence. Power Progress.'</span>
+                    <span class="code-comma">,</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="code-property">focus</span>
+                    <span class="code-operator">:</span>
+                    <span class="code-string">'Scalable, production-grade AI systems'</span>
+                    <span class="code-comma">,</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="code-property">domains</span>
+                    <span class="code-operator">:</span>
+                    <span class="code-bracket">[</span>
+                    <span class="code-string">'Finance'</span>
+                    <span class="code-comma">,</span>
+                    <span class="code-string">'Science'</span>
+                    <span class="code-comma">,</span>
+                    <span class="code-string">'Industry'</span>
+                    <span class="code-bracket">]</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="code-brace">}</span>
+                    <span class="code-semicolon">;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span class="title-text" data-text-en="Business Areas" data-text-ar="Business Areas">Business Areas</span>
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="category-title" data-text-en="AI for Finance" data-text-ar="AI for Finance">AI for Finance</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="Intelligent risk management and fraud detection" data-percent="99">
+                  <div class="skill-header">
+                    <span class="skill-name">Intelligent risk management and fraud detection</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Quantitative research and strategy modeling" data-percent="99">
+                  <div class="skill-header">
+                    <span class="skill-name">Quantitative research and strategy modeling</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Financial data intelligence platforms" data-percent="99">
+                  <div class="skill-header">
+                    <span class="skill-name">Financial data intelligence platforms</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Domain-specific large model deployment" data-percent="98">
+                  <div class="skill-header">
+                    <span class="skill-name">Domain-specific large model deployment</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title" data-text-en="AI for Science" data-text-ar="AI for Science">AI for Science</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="Scientific data modeling and simulation" data-percent="95">
+                  <div class="skill-header">
+                    <span class="skill-name">Scientific data modeling and simulation</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Molecular and materials intelligence" data-percent="90">
+                  <div class="skill-header">
+                    <span class="skill-name">Molecular and materials intelligence</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Automated experimental data analysis" data-percent="88">
+                  <div class="skill-header">
+                    <span class="skill-name">Automated experimental data analysis</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="High-performance computing and algorithm optimization" data-percent="85">
+                  <div class="skill-header">
+                    <span class="skill-name">High-performance computing and algorithm optimization</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title" data-text-en="AI for Industry" data-text-ar="AI for Industry">AI for Industry</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="Intelligent equipment diagnostics" data-percent="80">
+                  <div class="skill-header">
+                    <span class="skill-name">Intelligent equipment diagnostics</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Predictive maintenance systems" data-percent="20">
+                  <div class="skill-header">
+                    <span class="skill-name">Predictive maintenance systems</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Inspection and maintenance optimization" data-percent="10">
+                  <div class="skill-header">
+                    <span class="skill-name">Inspection and maintenance optimization</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-skill="Real-time industrial data modeling and monitoring" data-percent="1">
+                  <div class="skill-header">
+                    <span class="skill-name">Real-time industrial data modeling and monitoring</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span class="title-text" data-text-en="Products" data-text-ar="Products">Products</span>
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">Finance</div>
+                  <div class="timeline-badge">Risk</div>
+                </div>
+                <h3 class="timeline-title" data-text-en="Common Risk Engine" data-text-ar="Common Risk Engine">Common Risk Engine</h3>
+                <div class="timeline-company"><i class="fas fa-building"></i> Enterprise Risk Intelligence</div>
+                <p
+                  class="timeline-description"
+                  data-text-en="An enterprise-grade risk intelligence system supporting real-time monitoring, dynamic modeling, and regulatory compliance."
+                  data-text-ar="An enterprise-grade risk intelligence system supporting real-time monitoring, dynamic modeling, and regulatory compliance."
+                >
+                  An enterprise-grade risk intelligence system supporting real-time monitoring, dynamic modeling, and regulatory compliance.
+                </p>
+                <div class="timeline-achievements">
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Real-time monitoring</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Dynamic modeling</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Regulatory compliance</span></div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Risk</span>
+                  <span class="tag">Fraud</span>
+                  <span class="tag">RegTech</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">Finance</div>
+                  <div class="timeline-badge">Quant</div>
+                </div>
+                <h3 class="timeline-title" data-text-en="Common Quant Platform" data-text-ar="Common Quant Platform">Common Quant Platform</h3>
+                <div class="timeline-company"><i class="fas fa-building"></i> Quant Research & Strategy</div>
+                <p
+                  class="timeline-description"
+                  data-text-en="A quantitative research and strategy development environment with integrated analytics, backtesting, and deployment capabilities."
+                  data-text-ar="A quantitative research and strategy development environment with integrated analytics, backtesting, and deployment capabilities."
+                >
+                  A quantitative research and strategy development environment with integrated analytics, backtesting, and deployment capabilities.
+                </p>
+                <div class="timeline-achievements">
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Integrated analytics</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Backtesting</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Deployment-ready workflows</span></div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Research</span>
+                  <span class="tag">Strategy</span>
+                  <span class="tag">Execution</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">Science</div>
+                  <div class="timeline-badge">Modeling</div>
+                </div>
+                <h3 class="timeline-title" data-text-en="Common Science AI" data-text-ar="Common Science AI">Common Science AI</h3>
+                <div class="timeline-company"><i class="fas fa-flask"></i> Scientific Intelligence Platform</div>
+                <p
+                  class="timeline-description"
+                  data-text-en="A scientific intelligence platform for modeling, simulation, and computational optimization."
+                  data-text-ar="A scientific intelligence platform for modeling, simulation, and computational optimization."
+                >
+                  A scientific intelligence platform for modeling, simulation, and computational optimization.
+                </p>
+                <div class="timeline-achievements">
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Modeling & simulation</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Automated analysis</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>HPC optimization</span></div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Science AI</span>
+                  <span class="tag">Simulation</span>
+                  <span class="tag">Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">Industry</div>
+                  <div class="timeline-badge">Ops</div>
+                </div>
+                <h3 class="timeline-title" data-text-en="Common Industrial AI" data-text-ar="Common Industrial AI">Common Industrial AI</h3>
+                <div class="timeline-company"><i class="fas fa-industry"></i> Industrial Intelligence System</div>
+                <p
+                  class="timeline-description"
+                  data-text-en="An industrial intelligence system for equipment monitoring, diagnostics, and predictive maintenance."
+                  data-text-ar="An industrial intelligence system for equipment monitoring, diagnostics, and predictive maintenance."
+                >
+                  An industrial intelligence system for equipment monitoring, diagnostics, and predictive maintenance.
+                </p>
+                <div class="timeline-achievements">
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Equipment monitoring</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Diagnostics</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Predictive maintenance</span></div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Industry</span>
+                  <span class="tag">Reliability</span>
+                  <span class="tag">Safety</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">Platform</div>
+                  <div class="timeline-badge">Agents</div>
+                </div>
+                <h3 class="timeline-title" data-text-en="Common Multi-Agent Framework" data-text-ar="Common Multi-Agent Framework">Common Multi-Agent Framework</h3>
+                <div class="timeline-company"><i class="fas fa-robot"></i> Scalable Multi-Agent AI Architecture</div>
+                <p
+                  class="timeline-description"
+                  data-text-en="A scalable multi-agent AI architecture enabling collaborative decision-making, autonomous task decomposition, complex workflow orchestration, and domain-specific agent construction and deployment."
+                  data-text-ar="A scalable multi-agent AI architecture enabling collaborative decision-making, autonomous task decomposition, complex workflow orchestration, and domain-specific agent construction and deployment."
+                >
+                  A scalable multi-agent AI architecture enabling collaborative decision-making, autonomous task decomposition, complex workflow orchestration,
+                  and domain-specific agent construction and deployment.
+                </p>
+                <div class="timeline-achievements">
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Collaborative decision-making</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Autonomous task execution</span></div>
+                  <div class="achievement-item"><i class="fas fa-check-circle"></i><span>Workflow orchestration</span></div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Multi-Agent</span>
+                  <span class="tag">Orchestration</span>
+                  <span class="tag">Deployment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span class="title-text" data-text-en="Mission & Engagement" data-text-ar="Mission & Engagement">Mission & Engagement</span>
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#skills" class="project-link" title="Business Areas">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-placeholder">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title" data-text-en="Our Mission" data-text-ar="Our Mission">Our Mission</h3>
+                <p
+                  class="project-description"
+                  data-text-en="To build intelligent systems that strengthen financial infrastructure, accelerate scientific progress, and enhance industrial operations."
+                  data-text-ar="To build intelligent systems that strengthen financial infrastructure, accelerate scientific progress, and enhance industrial operations."
+                >
+                  To build intelligent systems that strengthen financial infrastructure, accelerate scientific progress, and enhance industrial operations.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Finance</span>
+                  <span class="tag">Science</span>
+                  <span class="tag">Industry</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#contact" class="project-link" title="Contact">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-placeholder">
+                  <i class="fas fa-handshake"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title" data-text-en="Engagement Model" data-text-ar="Engagement Model">Engagement Model</h3>
+                <p
+                  class="project-description"
+                  data-text-en="Enterprise-level custom AI solutions, private deployment and API integration, and joint research or strategic technology partnerships."
+                  data-text-ar="Enterprise-level custom AI solutions, private deployment and API integration, and joint research or strategic technology partnerships."
+                >
+                  Enterprise-level custom AI solutions, private deployment and API integration, and joint research or strategic technology partnerships.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Custom Solutions</span>
+                  <span class="tag">Private Deployment</span>
+                  <span class="tag">Partnerships</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#home" class="project-link" title="Overview">
+                      <i class="fas fa-home"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-placeholder">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title" data-text-en="We are hiring" data-text-ar="We are hiring">We are hiring</h3>
+                <p class="project-description" data-text-en="We are hiring" data-text-ar="We are hiring">
+                  我们在招聘
+                </p>
+                <div class="project-tags">
+                  <span class="tag">AI for the Real World</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span class="title-text" data-text-en="Contact" data-text-ar="Contact">Contact</span>
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-details">
+                  <h4 class="contact-label" data-text-en="Email" data-text-ar="Email">Email</h4>
+                  <a href="mailto:contact@commonlabs.tech" class="contact-value">contact@commonlabs.tech</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                <div class="contact-details">
+                  <h4 class="contact-label" data-text-en="Website" data-text-ar="Website">Website</h4>
+                  <a href="https://www.commonlabs.tech" target="_blank" rel="noopener noreferrer" class="contact-value">www.commonlabs.tech</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-details">
+                  <h4 class="contact-label" data-text-en="Location" data-text-ar="Location">Location</h4>
+                  <span class="contact-value" data-text-en="The United Arab Emirates, Dubai" data-text-ar="The United Arab Emirates, Dubai">The United Arab Emirates, Dubai</span>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder="Name" data-placeholder-en="Name" data-placeholder-ar="Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-input" placeholder="Email" data-placeholder-en="Email" data-placeholder-ar="Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder="Subject" data-placeholder-en="Subject" data-placeholder-ar="Subject" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-input form-textarea"
+                  rows="5"
+                  placeholder="Message"
+                  data-placeholder-en="Message"
+                  data-placeholder-ar="Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span data-text-en="Send Message" data-text-ar="Send Message">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-text-wrapper">
+            <p class="footer-text">
+              <span class="footer-copyright">© 2025 COMMON LABS</span>
+              <span class="footer-divider">•</span>
+              <span class="footer-built">AI for the Real World</span>
+            </p>
+            <p class="footer-author">
+              <span class="footer-by-text" data-text-en="COMMON LABS" data-text-ar="COMMON LABS">COMMON LABS</span>
+            </p>
+          </div>
+          <div class="footer-social">
+            <a href="mailto:contact@commonlabs.tech" class="footer-social-link" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.commonlabs.tech" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Website">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
